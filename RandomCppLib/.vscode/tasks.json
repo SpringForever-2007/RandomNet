@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "label": "build",
+    "type": "shell",
+    "command": "g++",
+    "args": [
+        "-g",
+        "${workspaceFolder}/randomcpplib.cpp",
+        "-shared",
+        "-D _EXPORT",
+        "-o",
+        "${workspaceFolder}/randomcpplib.dll"
+    ],
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    }
+}
